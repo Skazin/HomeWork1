@@ -13,14 +13,17 @@ public class HomeWork151 {
         System.out.print("Введите имя: ");
         String name = in.nextLine();
         in.close();
-        if (Objects.equals(name1 , name) == true) {
+        if (Objects.equals(name1, name)) {
             System.out.println("Привет!");
             System.out.println("Я тебя так долго ждал");
-        } else {
-            if (Objects.equals(name2 , name) == true) {
-                System.out.println("Я тебя так долго ждал");
-            } else System.out.println("Добрый день, а вы кто?");
-
         }
+        if (Objects.equals(name2, name)) {
+                System.out.println("Я тебя так долго ждал");
+        }
+        if (!Objects.equals(name1, name) && !Objects.equals(name2, name)){
+            System.out.println("Добрый день, а вы кто?");
+        }
+
     }
 }
+
